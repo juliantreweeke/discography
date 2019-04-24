@@ -20,10 +20,11 @@ const albumList = [
     { id: "rewrewe", title: "Druid Lizard", year: 2015, downloadLink: 'http://www.google.com', image: DruidImage, type: 'single' }
 ]
 
-const Container = styled.div`
-  display:flex;
-  flex-wrap: wrap;
+const Container = styled.ul`
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
 `
+
 
 
 export default class AlbumContainer extends Component {
